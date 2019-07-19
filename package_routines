@@ -138,5 +138,9 @@
 #pkg_install(){
 #}
 #
-#pkg_post_install(){
-#}
+pkg_post_install(){
+    mkdir "${SYS_QPKG_DIR}/data-dir"
+    
+    chown -R 0:0 "${SYS_QPKG_DIR}"
+    chmod 700 "${SYS_QPKG_DIR}" "${SYS_QPKG_DIR}/data-dir"
+}

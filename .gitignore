@@ -1,4 +1,2 @@
 build/
-arm-x*/
-x86*/
-arm_64/
+x86_64/nomad
